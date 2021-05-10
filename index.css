@@ -6,7 +6,7 @@ body{
     height: 100%;
     margin: 0;
     color: #ffffff;
-    background-color: rgb(70, 70, 70);
+    background: linear-gradient(to bottom right, #0099ff 0%, #ff3399 100%);
     background-size: 100%;
     background-attachment: fixed;
 }
@@ -18,7 +18,7 @@ html{
 
 .content{
   margin: 0 10%;
-  background-color: #000000;
+  background-color: #151b3a;
   min-height: 100%;
   padding: 20px;
 }
