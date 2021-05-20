@@ -24,8 +24,11 @@ html{
 }
 
 #logo{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 65px;
   float: left;
-  height: 90px;
+  height: 70px;
 }
 
 h1{
