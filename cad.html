@@ -2,6 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="./index.css">
+
+
+    
     <title>Website</title>
     <div class="navbar">
       <img src="./images/vector/logo.png" id="logo">
@@ -12,9 +15,10 @@
         <a  id="active" class="dropbtn" >Projects</a>
         <div class="dropdown-content">
           <a id="topbtn" >Projects</a>
+          <a href="webdev.html">Website <br>Development</a>
           <a href="comgraph.html">Computer <br> Graphics</a>
           <a id="active" href="cad.html">CAD</a>
-          <a href="3dprint.html">3D Printing</a>
+          <a href="3dmodel.html">3D Printing</a>
           <a href="laser.html">Laser Cutting</a>
           <a href="arduino.html">Arduino</a>
         </div>
@@ -25,14 +29,50 @@
   </head>
 
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
 <h1>CAD System</h1>
-
-
+<h2>Using Fusion 360</h2>
+<p>Fusion 360 is an integrated CAD, CAM and CAE software which allows us to perform many tasks that are useful in the module, such as making designs for both 3d printing and laser cutting. Being from an engineering course, I took a module in year one called Computer Aided Drafting, which introduced me to AutoCAD and Autodesk Inventor. As such, using Fusion360 felt familiar to me. Nevertheless, I still viewed some tutorials on using Fusion360 as a refresher, mainly videos by <a href="https://productdesignonline.com/" target="_blank" id="link">[Kevin Kennedy]</a>. Even then, there are more things I have yet to learn about Fusion360 which will be evident in the drawing exercise 2.</p>
+<h2>Drawing Exercises</h2>
+<a href="#exercise2" id="link">[Jump to Exercise 2]</a>
+<h3>Exercise 1 <br></h3>
+<figure>
+<div class="row">
+  <div class="column">
+    <img src="./images/CAD/d_exercise_1.png" style="width:100%">
+    <figcaption>Example Drawing</figcaption>
+  </div>
+  <div class="column">
+    <img src="./images/CAD/exercise_1.png" style="width:100%">
+    <figcaption>My Drawing</figcaption>
+  </div>
+</figure>
+<p>Exercise 1 served as a hands-on refresher on the tools used in Fusion 360. It was quite simple but fun to do. One thing I relearnt from this exercise was the importance of constraints, most importantly anchoring one point of the drawing to origin. <br> </p>
+<h3 id="exercise2"> <br> Exercise 2 </h3>
+<figure>
+<div class="row">
+  <div class="column">
+    <img src="./images/CAD/d_exercise_2.png" style="width:100%">
+    <figcaption>Example Drawing</figcaption>
+  </div>
+  <div class="column">
+    <img src="./images/CAD/exercise_2.png" style="width:100%">
+    <figcaption>My Drawing</figcaption>
+  </div>
+</figure>
+<p>During exercise 2, I faced one problem with drawing, which was that once the polygons were placed and initially dimensioned, I was unable to change its dimensions and number of sides after that. That was when I learnt about parametric drawings, introduced to me by my lecturer.</p>
+<figure>
+<img src="./images/CAD/parametric.png" style="width:100%" >
+<figcaption>Parametric Hexagon</figcaption>
+</figure>
+<p>By drawing the hexagon in a different way instead of using Fusion360’s built in polygon drawing tool, I was able to change whatever parameter of the polygon whenever I want. This not only extends to making polygons, but also in changing the dimensions of multiple features in a design.
+   <br> While it may not be that useful or downright a hassle in smaller projects, it will be very helpful in projects that require many copies of a certain feature that has to be consistent across the project. I will definitely be using more parametric drawings in the future
+  </p>
 <div class="footer">
   <p>Copyright &copy; 2021 lynn-mma</p>
 </div>
 
-
+<script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
