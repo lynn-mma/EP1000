@@ -32,12 +32,104 @@
 <p>Skip to</p>
 <a href="#bhtml" id="link">[Basic HTML]</a><br>
 <a href="#bcss" id="link">[Basic CSS]</a><br>
-<a href="#ghub" id="link">[Using Github]</a>
+<a href="#jsrc" id="link">[Additional Javascript]</a><br>
+<a href="#ghub" id="link">[Using Github]</a><br>
+<a href="#how" id="link">[How I developed the Website]</a>
 
 <h2>Why make a website?</h2>
+<p>Documentation</p>
+<p>Documentation allows us to collect and archive what has been done during our projects. It allows us to log our achievements and mistakes in a way that is easily accessible. This way, if in the future I achieve something I have done before or face a previous mistake, instead of re-learning everything again, I can just refer to my old documentation to save me time.</p>
+<p>This website serves to document my journey through the EP1000 module, not only for me to refer to but also for everyone else to view.</p>
 <h2 id="bhtml">Basic HTML</h2>
+<p>HTML is the standard markup language for web pages and describes the structure of a page. In short, HTML defines the content. </p>
+<p>Here is the list of things I learnt about HTML.</p>
+<ul>
+  <li>Structure (Headings, Paragraphs, Body)</li>
+  <li>Styles</li>
+  <li>Fomatting</li>
+  <li>Colours</li>
+  <li>Comments</li>
+  <li>Images</li>
+  <li>Hyperlinks</li>
+  <li>Absolute and Relative Links</li>
+  <li>File Pathing</li>
+  <li>Lists</li>
+  <li>Tables</li>
+</ul>
+<p>With this, I constructed a simple website to put what I learnt into practice.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/webdev/html1.png" style="width:100%">
+      <figcaption>Home page</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/webdev/html2.png" style="width:100%">
+      <figcaption>About me page</figcaption>
+    </div>
+  </figure>
+
+<br>
 <h2 id="bcss">Basic CSS</h2>
+<p>CSS is defined as the layout and style of the page. It takes the content from the HTML and changes the layout, colours etc. of it. By adding a separate CSS file, I can cut down on the clutter on the HTML files, focusing only on the content.</p>
+<p>Here are the list of things I learnt about CSS.</p>
+<ul>
+  <li>Class and ID</li>
+  <li>Padding and Margins</li>
+  <li>Element and Image Alignment</li>
+  <li>Font Family</li>
+  <li>Height and Width</li>
+  <li>Display</li>
+  <li>Colours (carried over from HTML)</li>
+  <li>Navbars</li>
+</ul>
+<p>With CSS, the styles and colours in the HTML files can be removed to make it easier to view and edit. I added CSS to my original website and below is the result. I made the colours jarring so that changes are more apparent as at this stage, I was still playing around with the values and seeing what does what.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/webdev/css1.png" style="width:100%">
+      <figcaption>Home page</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/webdev/css2.png" style="width:100%">
+      <figcaption>Software used page</figcaption>
+    </div>
+  </figure>
+
+
+
+<br>
+<h2 id="jsrc">Additional Javascript</h2>
+<p>While making the rest of the pages, I realised some of them get very long, and as the navbar is at the top, it may take a while to scroll back up sometimes. As such, I wanted to add a “Back to top” button that sticks to the page as the user scrolls down. Javascript was needed for this task. </p>
+<p>Initially, I just searched for a “back to top” button tutorial by W3 schools and added the necessary elements into my code. At first, to test it out, I just embedded the script into my html to see if it was working. Unsurprisingly, it was, so I set out to make a separate js file. This was when I encountered a problem where the js script was not being read by the html, even after adding the link at the top of the file.</p>
+<p>It was finally fixed when I found a <a href="https://www.sitepoint.com/community/t/index-html-not-finding-javascript-file/212358" target="_blank" id="link">[Forum Post]</a>. The issue was that the script was loaded at the top of the page before the button was loaded, as such no button appears. The issue was resolved by adding the link at the end of the body.</p>
+
+
+
+<br>
 <h2 id="ghub">Using Github</h2>
+<p>Github is a cloud-based service that allows developers to store, manage and track changes to their code, while also hosting publicly accessible web pages.</p>
+
+<p>Here are the steps I took to get my website on Github.</p>
+<ol>
+  <li>Creating an Account.</li>
+  <li>Making a Repository.</li>
+  <li>Hosting the repository as a website using Github Pages.</li>
+  <li>Acquire Link from Github Pages</li>
+</ol>
+
+<p>After getting the website link up, I downloaded Github Desktop in order to track versions of the webpage, as well as roll back versions whenever necessary. While using Github Desktop, I learnt 2 very important tcommands, which are commit and push. Commit saves all the changes and work done on the local device; push synchronises the changes with the remote repository. With these 2 commands, I can edit and publish my website without going onto the Github website</p>
+<br>
+<h2 id="how">How I developed the Website</h2>
+<p>Most of my website was built using bits and pieces of code from W3 schools, most of which being basic things. Here is a list of things with more substantial chunks of code copied.</p>
+<ul>
+  <li><a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp" target="_blank" id="link">[Dropdown Navbar]</a></li>
+  <li><a href="https://www.w3schools.com/howto/howto_css_images_side_by_side.asp" target="_blank"id="link">[Align Images Side by Side]</a></li>
+  <li><a href="https://www.w3schools.com/html/html_links_bookmarks.asp" target="_blank"id="link">[Create Bookmarks]</a></li>
+  <li><a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank"id="link">[Scroll Back to Top Button]</a></li>
+</ul>
+<p>All code copied has been modified in one way or another to fit the theme of this website.</p>
+
 
 <div class="footer">
   <p>Copyright &copy; 2021 lynn-mma</p>
