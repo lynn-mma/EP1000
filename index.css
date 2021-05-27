@@ -129,6 +129,7 @@ color: #ffffff;
   #topbtn{
     color: #ffffff;
     font-size: 20px;
+    
 
   }
 
@@ -154,14 +155,20 @@ color: #ffffff;
     display: block;
   }
 
+  #tpic{
+    background-color: #313131;
+  }
+  
+
   table, th, td {
     color: #1f1f1f;
     text-align: left;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 20px;
     border-top: 50px;
-    border: 1px solid black;
+    border: 1px solid #313131;
     border-collapse: collapse;
   }
 
@@ -177,10 +184,14 @@ color: #ffffff;
       background-color: rgb(0, 0, 0);
     }
 
+#t01{
+  width: 100%;
+}
+
 #picture {
   width: 250px;
-  padding-right: 10px;
-  margin-left: 10px;
+  padding-left: 10px;
+  float: right;
   }
   
   .footer {
@@ -206,6 +217,17 @@ color: #ffffff;
 
 #link:visited{
   color: rgb(139, 178, 190);
+  text-decoration: none;
+
+}
+
+#link2{
+  color: rgb(98, 127, 136);
+  text-decoration: none;
+}
+
+#link2:visited{
+  color: rgb(98, 127, 136);
   text-decoration: none;
 
 }

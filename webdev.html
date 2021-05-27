@@ -8,6 +8,7 @@
       <a href="index.html">Home</a>
       <a href="aboutme.html">About Me</a>
       <a href="tools.html">Tools</a>
+      <a href="timeline.html">Timeline</a>
       <div class="dropdown">
         <a id="active" class="dropbtn" >Projects</a>
         <div class="dropdown-content">
@@ -36,7 +37,7 @@
 <a href="#ghub" id="link">[Using Github]</a><br>
 <a href="#how" id="link">[How I developed the Website]</a>
 
-<h2>Why make a website?</h2>
+<h2 id="docu">Why make a website?</h2>
 <p>Documentation</p>
 <p>Documentation allows us to collect and archive what has been done during our projects. It allows us to log our achievements and mistakes in a way that is easily accessible. This way, if in the future I achieve something I have done before or face a previous mistake, instead of re-learning everything again, I can just refer to my old documentation to save me time.</p>
 <p>This website serves to document my journey through the EP1000 module, not only for me to refer to but also for everyone else to view.</p>
@@ -101,8 +102,8 @@
 <br>
 <h2 id="jsrc">Additional Javascript</h2>
 <p>While making the rest of the pages, I realised some of them get very long, and as the navbar is at the top, it may take a while to scroll back up sometimes. As such, I wanted to add a “Back to top” button that sticks to the page as the user scrolls down. Javascript was needed for this task. </p>
-<p>Initially, I just searched for a “back to top” button tutorial by W3 schools and added the necessary elements into my code. At first, to test it out, I just embedded the script into my html to see if it was working. Unsurprisingly, it was, so I set out to make a separate js file. This was when I encountered a problem where the js script was not being read by the html, even after adding the link at the top of the file.</p>
-<p>It was finally fixed when I found a <a href="https://www.sitepoint.com/community/t/index-html-not-finding-javascript-file/212358" target="_blank" id="link">[Forum Post]</a>. The issue was that the script was loaded at the top of the page before the button was loaded, as such no button appears. The issue was resolved by adding the link at the end of the body.</p>
+<p>Initially, I just searched for a “back to top” button tutorial by W3 schools and added the necessary elements into my code. At first, to test it out, I just embedded the script into my html to see if it was working. It worked, so I set out to make a separate js file. This was when I encountered a problem where the js script was not being read by the html, even after adding the link at the top of the file.</p>
+<p>It was finally fixed when I found a <a href="https://www.sitepoint.com/community/t/index-html-not-finding-javascript-file/212358" target="_blank" id="link">[Forum Post]</a>. The issue was that the script was loaded at the top of the page before the button was loaded, as such no button appears. The issue was resolved by adding the link to js at the end of the body.</p>
 
 
 
@@ -118,19 +119,39 @@
   <li>Acquire Link from Github Pages</li>
 </ol>
 
-<p>After getting the website link up, I downloaded Github Desktop in order to track versions of the webpage, as well as roll back versions whenever necessary. While using Github Desktop, I learnt 2 very important tcommands, which are commit and push. Commit saves all the changes and work done on the local device; push synchronises the changes with the remote repository. With these 2 commands, I can edit and publish my website without going onto the Github website</p>
+<p>After getting the website link up, I downloaded Github Desktop in order to track versions of the webpage, as well as roll back versions whenever necessary. While using Github Desktop, I learnt 2 very important tcommands, which are commit and push. </p>
+<p>Commit saves all the changes and work done on the local device; push synchronises the changes with the remote repository. With these 2 commands, I can edit and publish my website without going onto the Github website</p>
 <br>
 <h2 id="how">How I developed the Website</h2>
-<p>Most of my website was built using bits and pieces of code from W3 schools, most of which being basic things. Here is a list of things with more substantial chunks of code copied.</p>
+<p>Most of my website was built using bits and pieces of code from W3 schools, most of which being basic things. Here is a list of elements I referenced from W3 schools.</p>
+<p>*All code referenced has been altered to fit the theme of the website.</p>
 <ul>
   <li><a href="https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp" target="_blank" id="link">[Dropdown Navbar]</a></li>
   <li><a href="https://www.w3schools.com/howto/howto_css_images_side_by_side.asp" target="_blank"id="link">[Align Images Side by Side]</a></li>
   <li><a href="https://www.w3schools.com/html/html_links_bookmarks.asp" target="_blank"id="link">[Create Bookmarks]</a></li>
   <li><a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank"id="link">[Scroll Back to Top Button]</a></li>
 </ul>
-<p>All code copied has been modified in one way or another to fit the theme of this website.</p>
+<p>One problem I faced in terms of the layout was the alignment of the dropdown menu in the navbar. The pictures below displays the problem.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/webdev/dropdown1.png" style="width:100%">
+      <figcaption>What I wanted</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/webdev/dropdown2.png" style="width:100%">
+      <figcaption>What actually happened</figcaption>
+    </div>
+  </figure>
 
-
+  <p>As the name suggests, the dropdown menu is supposed to drop down below the button, as shown in the first picture. However, in my case the alignment was wrong, and the first link on the dropdown menu ends up overlaying the button on the navbar. Even after hours of trouble shooting, I was still unable to fix the problem, but I did find a solution.</p>
+<p>The solution I implemented was to add a new, unclickable link to the top of the navbar menu, and use padding to align it with the button in the navbar. The added link has a new ID and a different set of CSS in order to match it to the pre-existing button on the navbar.</p>
+<figure>
+  <img src="./images/webdev/addedhtml.png" style="width: 100%;">
+  <figcaption>What was added.</figcaption>
+</figure>
+<p>Although the solution wasn’t an elegant, proper solution, at least it works and achieves what I initially wanted it to do. Other than this and the Javascript issue, there were no other major issues I faced while building this site.
+</p>
 <div class="footer">
   <p>Copyright &copy; 2021 lynn-mma</p>
 </div>
