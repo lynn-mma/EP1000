@@ -30,12 +30,103 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
 <h1>3D Modeling</h1>
-<h2>Work in progress</h2>
-<h2>3D file embed test</h2>
-<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd9683a56c26695dc8a57?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-<p>chess piece</p>
-<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd96850ab7db00719935d?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-<p>useless mug</p>
+<h2>Modeling a Knight Piece</h2>
+<p>Requirements</p>
+<ul>
+  <li>Base: 30mm</li>
+  <li>Height: 50mm</li>
+  <li>Head Thickness: 5mm</li>
+  <li>Hollow Base</li>
+</ul>
+<p>First, a <a href="https://toppng.com/knight-svg-horse-silhouette-knight-chess-piece-PNG-free-PNG-Images_164787" id = "link">[reference image]</a> was chosen off of google images. The image was inserted as a canvas to serve as a reference when I was modelling. The canvas image was set to a height of 50mm, fulfilling the height requirement. Disclaimer, as this task requires copying certain features off an image and many curves, it will be impossible to dimension and constrain every sketch.</p>
+<figure>
+  <img src="./images/3dmodel/canvas.png" style="width:100%">
+  <figcaption>Inserted Canvas</figcaption>
+</figure>
+<p>Next, the sketch for the base was drawn. As the revolve tool was being used, I only drew one side of the base. The base was drawn using the line tool, fillet tool for the rounded corners and the 3-point arc tool was used for the curved parts The base was dimensioned to 30mm in diameter in this step. After the sketch was done, I revolved it around the Z axis by 360 degrees to get a full base.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/basesketch.png" style="width:100%">
+      <figcaption>Base Sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/revolve.png" style="width:100%">
+      <figcaption>Base Revolve</figcaption>
+    </div>
+  </figure>
+<p>Next was hollowing out the base. To do this, the shell tool was used, and a wall thickness of 1mm was chosen arbitrarily</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/shellbefore.png" style="width:100%">
+      <figcaption>Before Shell</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/shellafter.png" style="width:100%">
+      <figcaption>After Shell</figcaption>
+    </div>
+  </figure>
+<p>Moving onto the main head of the knight piece. As the head is entirely made of long, continuous curves, the spline tool was used to draw the sketch. I wanted the mane of the horse to be of different thickness, so for this step the mane was ignored during the sketch. The base was projected so that the sketch can anchor to points on the base. The sketch was then extruded symmetrically to a total width of 5mm, fulfilling the requirement for head thickness. The extrusion was joined to the base.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/headsketch.png" style="width:100%">
+      <figcaption>Head Sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/headextrude.png" style="width:100%">
+      <figcaption>Head Extrude</figcaption>
+    </div>
+  </figure>
+<p>Afterwards, in order to make the ears, I first added a plane using the plane at angle tool. I tried my best to make the plane tangential to the ear curve. Afterwards, the basic sketch for the gap between the ears was constructed, then cut outwards on both sides in order to make the ear shape.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/earplane.png" style="width:100%">
+      <figcaption>Adding Plane</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/earsketch.png" style="width:100%">
+      <figcaption>Ear Sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/earcut.png" style="width:100%">
+      <figcaption>Cut</figcaption>
+    </div>
+  </figure>
+
+  <p>Onto the mane. The head was projected such that the sketch for the mane can anchor to points on the head. To get one long continuous curve, the spline tool was used throughout the whole sketch. The sketch was then extruded to half the head's thickness, which is 2.5mm.
+  </p>
+  <figure>
+    <div class="row">
+      <div class="column">
+        <img src="./images/3dmodel/manesketch.png" style="width:100%">
+        <figcaption>Mane Sketch</figcaption>
+      </div>
+      <div class="column">
+        <img src="./images/3dmodel/maneextrude.png" style="width:100%">
+        <figcaption>Mane Extrude</figcaption>
+      </div>
+    </figure>
+
+    <p>Finally, to knock off the hard 90 degree angles on the head, the chamfer tool was used on majority of the edges.</p>
+    <figure>
+      <div class="row">
+        <div class="column">
+          <img src="./images/3dmodel/headfillet.png" style="width:100%">
+          <figcaption>Edges being Chamfered</figcaption>
+        </div>
+        <div class="column">
+          <img src="./images/3dmodel/filletcloseup.png" style="width:100%">
+          <figcaption>Close up of the Chamfers</figcaption>
+        </div>
+      </figure>
+<p>And with that, the model is done, below is the embedded 3D model.</p>
+<figure>
+<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd9688826ba83e93aac42?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
+</figure>
+
 <div class="footer">
   <p>Copyright &copy; 2021 lynn-mma</p>
 </div>

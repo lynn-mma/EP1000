@@ -57,7 +57,15 @@ h1{
 
 }
 
+#center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+figcaption{
+  font-size: 15px;
+}
 
  /* Shows active tab*/
  #active {
@@ -201,10 +209,6 @@ color: #ffffff;
   background-color: #313131;
 }
 
-
-
-
-  
   .footer {
     right: 0;
     bottom: 0;
