@@ -30,7 +30,9 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
 <h1>3D Modeling</h1>
-<h2>Modeling a Knight Piece</h2>
+<br>
+<a href="#box" id="link">[Jump to Laser Cut Box with Lid]</a>
+<h2 id="knight">Modeling a Knight Piece</h2>
 <p>Requirements</p>
 <ul>
   <li>Base: 30mm</li>
@@ -126,6 +128,189 @@
 <figure>
 <iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd9688826ba83e93aac42?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
 </figure>
+
+<h2 id="box">Modelling a Laser Cut Box with Lid</h2>
+<p>First a sketch was done on paper with approximate dimensions. Along with that are the calculations used in the parameters to define the number of tabs, the size of tabs etc.</p>
+<figure>
+  <img src="" alt="sketch">
+</figure>
+<p>Next, parameters were set in the program.</p>
+<figure>
+  <img src="" alt="parameters">
+</figure>
+<p>Making a basic box without the lid first.</p>
+<p>First a rectangle sketch was drawn and extruded for the front face. The sketch was dimensioned using the parameters length and height mentioned above. A tab and the tab spacing for the length and height is drawn as well, but for now the whole rectangle is extruded to the thickness set earlier.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/1frontsketch.png" style="width:100%">
+      <figcaption>Front Sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/2frontextrude.png" style="width:100%">
+      <figcaption>Front Extrude</figcaption>
+    </div>
+  </figure>
+<p>The tab spacing on the length was then cut. This allows the tab spacing to be a feature instead of being baked into the sketch, which will allow me to use rectangular pattern to pattern it along the length.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/3frontltabcut.png" style="width:100%">
+      <figcaption>Cutting out the tab</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/4frontltabpatt.png" style="width:100%">
+      <figcaption>Patterning</figcaption>
+    </div>
+  </figure>
+<p>The same was done to the tab on the height, but the feature was patterned in 2 directions such that the opposite side of the front face also has tabs. And with that the front face is done for now.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/5fronthtabcut.png" style="width:100%">
+      <figcaption>Cutting out the tab</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/6fronthtabpatt.png" style="width:100%">
+      <figcaption>Patterning</figcaption>
+    </div>
+  </figure>
+<p>Moving onto the side, first a new component was made using the front face as a parent. The sketch was dimensioned using the parameters width and height mentioned above and is anchored to the edge face of the front tab. In this case, only a tab and the tab spacing for the width. Just like earlier, the whole rectangle is extruded to the thickness, intersecting the front face.</p>\
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/7sidesketch.png" style="width:100%">
+      <figcaption>Side Sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/8sideextrude.png" style="width:100%">
+      <figcaption>Side Extrude</figcaption>
+    </div>
+  </figure>
+<p>The tab spacing on the width was cut, then rectangularly patterned to get the tabs on the width of the box.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/9sidewtabcut.png" style="width:100%">
+      <figcaption>Cutting out the tab</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/10sidewtabpatt.png" style="width:100%">
+      <figcaption>Patterning</figcaption>
+    </div>
+  </figure>
+<p>To mirror the side plate, a plane that bisects the front face was first constructed using midplane. The side plate was then mirrored to the other side.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/11sideplane.png" style="width:100%">
+      <figcaption>Adding the plane</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/12sidemirror.png" style="width:100%">
+      <figcaption>Mirroring</figcaption>
+    </div>
+  </figure>
+<p>The same was then done to the front plate.</p>
+<figure>
+<div class="row">
+  <div class="column">
+    <img src="./images/3dmodel/box/13frontplane.png" style="width:100%">
+    <figcaption>Adding the plane</figcaption>
+  </div>
+  <div class="column">
+    <img src="./images/3dmodel/box/14frontmirror.png" style="width:100%">
+    <figcaption>Mirroring</figcaption>
+  </div>
+</figure>
+<p>To get the remaining tabs on the sides, the combine tool was used. Using the front plate and its mirror as tool bodies and keeping tools, the tabs are cut out of the side plate.</p>
+<p>The same was done on the other side.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/15sidecombine.png" style="width:100%">
+      <figcaption>Cutting the tabs.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/16sidecombine.png" style="width:100%">
+      <figcaption>Cutting the tabs</figcaption>
+    </div>
+  </figure>
+<p>To make the bottom, a new component was made. A rectangle was sketched and constrained to the edges of the sides I already had. The rectangle was then extruded to the thickness, intersecting the existing sides.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/17bottomsketch.png" style="width:100%">
+      <figcaption>Bottom sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/18bottomextrude.png" style="width:100%">
+      <figcaption>Bottom extrude</figcaption>
+    </div>
+  </figure>
+<p>The tabs on the bottom were then cut using the combine tool. The existing sides were chosen as the tool bodies and the tools were kept after the cut. With that, the main box assembly was done.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/19bottomcombine.png" style="width:100%">
+      <figcaption>Cutting out tabs on the bottom</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/20basebox.png" style="width:100%">
+      <figcaption>Finished base</figcaption>
+    </div>
+  </figure>
+<p>To make a movable lid on the box, I kept it simple and made a “Square peg in round hole” hinge. I went back to the original front sketch and added the hole for the hinge. The shape was constructed by first inscribing a construction square with a side length being the thickness in a circle which will become the hole. The square represents the “pin” of the lid. Another circle was then drawn concentric to the hole 90% of the thickness larger than the hole. The bottom of the square was then constrained collinearly to the top edge of the front and the larger circle was constrained tangentially to the right edge of the front. The reasoning for the larger circle being 90% of the thickness larger is so that the lid has clearance to open and for the side to not interfere. </p>
+<p>The front extrude was then updated with the new sketch and the rest of the model updated itself accordingly.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/21hingesketch.png" style="width:100%">
+      <figcaption>Hinge sketch</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/22hingeextrude.png" style="width:100%">
+      <figcaption>Extrude</figcaption>
+    </div>
+  </figure>
+<p>To make the lid, first a new component was made. Then a rectangle was sketched similarly to the bottom. In order to make the “pin” of the lid, the current model was first projected onto the sketch. Lines were then drawn to make a very specific shape that would allow for the lid to pivot about the “pin”</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/23lidproj.png" style="width:100%">
+      <figcaption>Projection</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/24lidsketch.png" style="width:100%">
+      <figcaption>Lid sketch</figcaption>
+    </div>
+  </figure>
+<p>Finally, the sketch was extruded to the thickness, completing the lid. With the lid completed, the box is done for now, at least for the construction of it.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/25lidextrude.png" style="width:100%">
+      <figcaption>Lid Extrude</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/26finalbox.png" style="width:100%">
+      <figcaption>Final box</figcaption>
+    </div>
+  </figure>
+<p>To display the parameters at work, below are pictures of the same box with different parameters. </p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/3dmodel/box/27variant1.png" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/28variant2.png" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./images/3dmodel/box/29variant3.png" style="width:100%">
+    </div>
+  </figure>
+
 
 <div class="footer">
   <p>Copyright &copy; 2021 lynn-mma</p>
