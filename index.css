@@ -16,6 +16,13 @@ html{
   height: 100%;
 }
 
+/*rounded border of text*/
+p{
+  border-radius: 10px;
+  background: #4b4b4b;
+  padding: 10px;
+}
+
 .content{
   margin: 0 10%;
   background-color: #313131;
@@ -207,6 +214,12 @@ color: #ffffff;
 
 #tpicborder{
   background-color: #313131;
+}
+
+#footer{
+  border-radius: 0;
+  background: none;
+  padding: 0px;
 }
 
   .footer {

@@ -30,12 +30,29 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
 <h1>Arduino</h1>
-<h2>Work in progress</h2>
+<h2>Counting 7-Segment Display</h2>
+<p>Simulation</p>
+<figure>
+<iframe width="725" height="453" src="https://www.tinkercad.com/embed/gemPOGUwoug" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</figure>
+<h3>Explanation</h3>
+<figure>
+  <img src="./images/Arduino/prereq.png" width="100%">
+  </figure>
+  <p>What we need to know before the code is the decoder truth table and the pin layout for the display itself. </p>
+  <p>Each segment of the display is assigned to a letter, and by looking at the ‘1’s in the decoder truth table, we can see that each segment will only turn on for certain numbers.</p>
+  <p>The code can be viewed in the simulation above. First, each segment is assigned to a pin on the arduino Uno. Then, the pins were setup to be output pins. </p>
+  <p>Next is the counting loop. For every value of 'i' below 10 starting at 0, the code first goes through with the displayDigit function, wait 1000 seconds, does the turnOff function then adds 1 to 'i'. Before 'i' reaches 10, the loop breaks and resets itself, starting back from 0. </p>
+  <p>The turnOff function just tells the segments to turn off after each loop.</p>
+  <p>How the displayDigit function works is as explained earlier. Each segment will only need to turn on for certain numbers.For example, segment ‘a’ is turned for every number except 1 and 4. This means that when 'i' is either 1 or 4, the segment 'a' will be turned off, otherwise 'a' would be on. This is repeated for the other segments .</p>
+
+  <h2>One switch many states</h2>
+  <p>WIP</p>
 
 
-<div class="footer">
-  <p>Copyright &copy; 2021 lynn-mma</p>
-</div>
+  <div class="footer">
+    <p id="footer">Copyright &copy; 2021 lynn-mma</p>
+  </div>
 <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
