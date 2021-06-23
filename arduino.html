@@ -74,7 +74,7 @@
   <img src="./images/Arduino/asgn2/button_bounce.jpeg" width="100%">
 </figure>
 <p>Another issue I faced was using delay for the flashing of the LEDs. However, I was not able to find the cause of this. Nevertheless, using millis() I was able to circumvent this issue.</p>
-<p>Explanation: <br> <br> Before explaning the code, it is important to understand millis(). millis() returns the number of milliseconds passed since the board began running the program. It acts as an internal clock and will be used multiple times during the assignment. <br><br> Just like assignment 1, each LED and button was assigned to an input pin and variables were declared. lastDebounceTime, debounceDelay and pressDelay are unsigned long as the variables need extra bits as they are using millis(). </p>
+<p>Explanation: <br> <br> Before explaning the code, it is important to understand millis(). millis() returns the number of milliseconds passed since the board began running the program. It acts as an internal clock and will be used multiple times during the assignment. <br><br> Just like assignment 1, each LED and button was assigned to a pin and variables were declared. lastDebounceTime, debounceDelay and pressDelay are unsigned long as the variables might need extra bits.</p>
 <figure>
   <img src="./images/Arduino/asgn2/manystate1.png">
 </figure>
