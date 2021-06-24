@@ -106,7 +106,7 @@
   <img src="./images/Arduino/asgn2/manystate5.png">
 </figure>
 <p> The function decode contains the switch states of the LEDs. <br><br> To make it flash, instead of delay, millis() was used. Adding delay caused problems with the input but I could not figure out why as of the writing of this documentation. <br>
-The basic principal is that it takes the millis() reading at a certain point in time and finds the remainder when divided by 2, which results in either a '0'(OFF) or '1'(ON). However, just using millis() will cause the LED to blink every millisecond, which would be too fast. As such, the reading is first divided by 100, which will cause it to blink every 100ms instead as it it will round the value to the nearest 100ms. The timing can be changed by changing this number.</p>
+The basic principle is that it takes the millis() reading at a certain point in time and finds the remainder when divided by 2, which results in either a '0'(OFF) or '1'(ON). However, just using millis() will cause the LED to blink every millisecond, which would be too fast. As such, the reading is first divided by 100, which will cause it to blink every 100ms instead as it it will round the value to the nearest 100ms. The timing can be changed by changing this number.</p>
 <figure>
   <img src="./images/Arduino/asgn2/manystate6.png">
 </figure>
