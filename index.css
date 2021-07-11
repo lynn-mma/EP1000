@@ -206,6 +206,7 @@ color: #ffffff;
 }
 
 
+
 #tpic{
   background-color: #313131;
   width: 250px;
@@ -215,6 +216,13 @@ color: #ffffff;
 #tpicborder{
   background-color: #313131;
 }
+
+#lasercutter{
+  height: 240px;
+  margin-left: auto;
+  display: block;
+}
+
 
 #footer{
   border-radius: 0;

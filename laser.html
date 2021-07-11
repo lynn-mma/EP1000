@@ -17,7 +17,7 @@
           <a href="comgraph.html">Computer <br> Graphics</a>
           <a href="cad.html">CAD</a>
           <a href="3dmodel.html">3D Modeling</a>
-          <a id="active" href="laser.html">Laser Cutting</a>
+          <a href="laser.html">Laser Cutting &<br> 3D Printing</a>
           <a href="arduino.html">Arduino</a>
         </div>
         
@@ -30,9 +30,143 @@
   <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
-<h1>Laser Cutting</h1>
-<h2>Work in progress</h2>
+<h1 id="#lasercut">Laser Cutting</h1>
+<h2>Preparation</h2>
+<p>First, the thickness of the material used was measured and the parametrics of the <a href="3dmodel.html#box" id="link">[Lasercut Box]</a> was changed accordingly. The sketches of the shapes I wanted to cut were then exported to DXF.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/lasercut & 3d printing/dxf1.png" style="width:100%">
+      <figcaption>Front Sketch Export</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/lasercut & 3d printing/dxf2.png" style="width:100%">
+      <figcaption>Sides Sketch Export</figcaption>
+    </div>
+  </figure>
+  <p>The files were then imported into LibreCad and collated into one file to be lasercut. This file was then brought to Coreldraw, where the final preparations were made, such as changing all the settings to those in the table below, and adding decals, such as my logo on the lid.</p>
+  <figure>
+    <div class="row">
+      <div class="column">
+        <img src="./images/lasercut & 3d printing/dxf3.png" style="width:100%">
+        <figcaption>Collated File</figcaption>
+      </div>
+      <div class="column">
+        <img src="./images/lasercut & 3d printing/dxflogo.png" style="width:100%">
+        <figcaption>Logo Used</figcaption>
+      </div>
+    </figure>
+<h2>Machine and settings used.</h2>
+<table style="width:100%">
+  <table id="t01">
+    <colgroup>
+      <col span="1" style="width: 15%;">
+      <col span="1" style="width: 55%;">
+      <col span="1" style="width: 30%;">
+   </colgroup>
+  <tbody>
+    <tr>
+      <td>Machine</td>
+      <td>Epilog Fusion Pro</td>
+      <td rowspan="6" id="tpicborder"> <img src="./images/lasercut & 3d printing/lasercutter.jpg" id="lasercutter"/></td>
+    </tr>
+    <tr>
+      <td>Material Thickness and Type</td>
+      <td>3.9mm Plywood</td>
+    </tr>
+    <tr>
+      <td rowspan="3" >Cut Settings</td>
+      <td>Speed</td>
+    </tr>
+    <tr>
+      <td>Power</td>
+    </tr>
+    <tr>
+      <td>???</td>
+    </tr>
+    <tr>
+      <td>Engrave Settings</td>
+      <td>Default</td>
+    </tr>
+  </tbody>
+  </table>
+<h2>Final Product</h2>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/lasercut & 3d printing/box1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./images/lasercut & 3d printing/box3.jpg" style="width:100%">
+    </div>
+  </figure>
+<h2>What went wrong</h2>
+<p>One error I made during the laser cutting process was forgetting to flip one of the sides before laser cutting. As the wood had a "nice" side and a "bad" side, without flipping, one of my side pieces had to be used with the "bad" side facing out. This is something I will keep in mind in the future.<br><br>
+Another error I made was not thinking about how small the logo was going to be in the final product. As such some of the outlines were too thin and werent properly engraved in the lasercutter.
+</p>
 
+<h1 id="#3dprint">3D Printing</h1>
+<h2>Preparation</h2>
+<p>The 3D file of the <a href="3dmodel.html#knight" id="link">[Knight Chess Piece]</a> was exported as an STL file and opened in Cura to slice it.</p>
+<figure>
+  <img src="./images/lasercut & 3d printing/afterslice.png" style="width:100%">
+  <figcaption>File after Slicing</figcaption>
+</figure>
+<h2>Machine and settings used.</h2>
+<table style="width:100%">
+  <table id="t01">
+    <colgroup>
+      <col span="1" style="width: 15%;">
+      <col span="1" style="width: 55%;">
+      <col span="1" style="width: 30%;">
+   </colgroup>
+  <tbody>
+    <tr>
+      <td>Machine</td>
+      <td>Ultimaker 2+</td>
+      <td rowspan="6" id="tpicborder"> <img src="./images/lasercut & 3d printing/3dprinter.jpg" id="lasercutter"/></td>
+    </tr>
+    <tr>
+      <td>Material</td>
+      <td>Green PLA</td>
+    </tr>
+    <tr>
+      <td>Layer Height</td>
+      <td>0.2mm</td>
+    </tr>
+    <tr>
+      <td>Infill Density and Pattern</td>
+      <td>20% Grid</td>
+    </tr>
+    <tr>
+      <td>Supports</td>
+      <td>Zig Zag</td>
+    </tr>
+    <tr>
+      <td>Build Plate Adhesion</td>
+      <td>Brim</td>
+    </tr>
+  </tbody>
+  </table>
+<h2>Final Product</h2>
+<figure>
+  <img src="./images/lasercut & 3d printing/outofprinter.jpg" style="width:100%">
+  <figcaption>Chess Piece after Printing</figcaption>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/lasercut & 3d printing/horse2.jpg" style="width:100%">
+      <figcaption>Chess Piece after Cleanup</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/lasercut & 3d printing/horse1.jpg" style="width:100%">
+    </div>
+  </figure>
+<h2>What went wrong</h2>
+<p>The issues that occured during the process are all due to the presence of supports. Supports took a large portion of the time to print and even after printing, the support material was hard to remove, resulting in bad surface finishing. In future prints, it will be beneficial to reduce the amount of supports used and I will have to design 3D models with this in mind.</p>
+
+  
 <div class="footer">
   <p id="footer">Copyright &copy; 2021 lynn-mma</p>
 </div>
