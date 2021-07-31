@@ -31,8 +31,150 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
 <h1>Final Project</h1>
-<h2>Idea</h2>
-<p>Macropad :D</p>
+<h2>Week 1</h2>
+<h3>Ideation</h3>
+<p>Originally, I wanted to make a mechanical tenkey pad for macros and shortcuts from scratch, soldering my own mechanical switches together in a switch matrix. However, because of the lack of time, I decided to use a 4x4 Matrix Membrane Keypad, which achieves the same purpose. With the main component decided, I went ahead and sketched out a basic case design.</p>
+<h3>Sketch</h3>
+<figure>
+<img src="./images/final/sketch.jpg" style="width:100%">
+</figure>
+<p>The case consists of 4 acrylic walls, connected at the corners with 3d printed pieces, and sandwiched between 2 acrylic plates. The keypad rests on platforms on the corner pieces and is held down by the top plate. I plan to use M3x25 screws to connect everything together. With this sketch, I started to 3D model the case</p>
+<h3>3D modelling</h3>
+<p>Version 1</p>
+<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd96846e509ad7070adb6?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
+<p>The differences between the sketch and this first version is the addition of the mount for the microcontroller and that the feet has not been modeled yet. However, after modelling it I realised that I did not have any place to mount the neopixel strips I planned to use. </p>
+<p>Version 2</p>
+<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd968be5a32477691b666?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id = "center"></iframe>
+<p>Changes were made to the corner pieces such that now there is a "floating" panel in the middle where the neopixels can stick onto. The keypad will still rest on the top of it. Originally, the turqoise and pink parts (pictured below) were a single body, but I separated them so that there will be no supports during 3D printing. <br><br> Another change made was adding more space for the keypad. The keypad is very thin and floppy on its own so I plan to stick it onto a laser cut panel in order to give it more rigitidy and strength. The thickness of the acrylic plate was accounted for in the space between the top plate and the place where it will rest.</p>
+<figure>
+  <img src="./images/final/newcorners.png" style="width:100%">
+  <figcaption>New corner pieces</figcaption>
+</figure>
+<h3>First prints and cuts</h3>
+<p>With the 3D modelling done and since the machines were free, I printed and laser cut most of the parts.</p>
+<h3>Machine and settings used for 3D printing.</h3>
+<table style="width:100%">
+  <table id="t01">
+    <colgroup>
+      <col span="1" style="width: 15%;">
+      <col span="1" style="width: 55%;">
+      <col span="1" style="width: 30%;">
+   </colgroup>
+  <tbody>
+    <tr>
+      <td>Machine</td>
+      <td>Ultimaker 2+</td>
+      <td rowspan="6" id="tpicborder"> <img src="./images/lasercut & 3d printing/3dprinter.jpg" id="lasercutter"/></td>
+    </tr>
+    <tr>
+      <td>Material</td>
+      <td>Orange PLA</td>
+    </tr>
+    <tr>
+      <td>Layer Height</td>
+      <td>0.2mm</td>
+    </tr>
+    <tr>
+      <td>Infill Density and Pattern</td>
+      <td>20% Grid</td>
+    </tr>
+    <tr>
+      <td>Supports</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Build Plate Adhesion</td>
+      <td>Brim</td>
+    </tr>
+  </tbody>
+  </table>
+<p>The print took roughly and hour and a half.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/3dprint1.jpg" style="width:100%">
+      <figcaption>First few layers</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/3dprint2.jpg" style="width:100%">
+      <figcaption>Before clean up</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/3dprint3.jpg" style="width:100%">
+      <figcaption>After clean up</figcaption>
+    </div>
+  </figure>
+
+  <h2>Machine and settings used for Lasercutting.</h2>
+<table style="width:100%">
+  <table id="t01">
+    <colgroup>
+      <col span="1" style="width: 15%;">
+      <col span="1" style="width: 55%;">
+      <col span="1" style="width: 30%;">
+   </colgroup>
+  <tbody>
+    <tr>
+      <td>Machine</td>
+      <td>Epilog Fusion Pro</td>
+      <td rowspan="6" id="tpicborder"> <img src="./images/lasercut & 3d printing/lasercutter.jpg" id="lasercutter"/></td>
+    </tr>
+    <tr>
+      <td>Material Thickness and Type</td>
+      <td>3mm Frosted Acrylic</td>
+    </tr>
+    <tr>
+      <td rowspan="3" >Cut Settings</td>
+      <td>Speed - 18</td>
+    </tr>
+    <tr>
+      <td>Power - 90</td>
+    </tr>
+    <tr>
+      <td>Frequency - -</td>
+    </tr>
+    <tr>
+      <td>Engrave Settings</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  </table>
+  <figure>
+    <div class="row">
+      <div class="column">
+        <img src="./images/final/dxf.png" style="width:100%">
+        <figcaption>DXF layout</figcaption>
+      </div>
+      <div class="column">
+        <img src="./images/final/lasercut.jpg" style="width:100%">
+        <figcaption>Pieces cut out</figcaption>
+      </div>
+    </figure>
+
+<p>After I got all the parts, I faced 3 issues. <br>Issue #1: I did not properly measure how wide the neopixel strips were before printing. The current width on the 3D model was .5mm, but the neopixels are 9~10mm wide. With the current model, only half of the width would be secured. <br><br>Issue #2: Using the brim was a mistake. Because the parts being printed were totally flat with relatively large surface area, I could have gotten away with printing without the brim. However, I still did, which resulted in lots of time being spent cleaning up the print, as the brim got into all the slots for the acrylic plate.<br><br>Issue #3: I did not account for tolerances and shrinkage during the print. As a result, the acrylic plates could not fit into their slots and lots of post processing work had to be done to make sure they fit. Moreover, the holes I modelled to be M3 ended up shrinking as well, requiring me to drill it out again using a 3mm drill. </p> 
+<p>Even with all these issues, I still sanded all the parts to make it fit in order to see how everything went together.</p>
+
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/fit1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./images/final/fit2.jpg" style="width:100%">
+    </div>
+  </figure>
+  <figure>
+    <div class="row">
+      <div class="column">
+        <img src="./images/final/fit3.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="./images/final/fit4.jpg" style="width:100%">
+      </div>
+    </figure>
+
+<p>Next week, I plan to reprint the corner piece with the correct width for the neopixel, print out the mount for the microcontroller, as well as solder the keypad and neopixels to the microcontroller.</p>
+
 
 <div class="footer">
   <p id="footer">Copyright &copy; 2021 lynn-mma</p>
