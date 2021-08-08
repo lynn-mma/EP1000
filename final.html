@@ -44,27 +44,25 @@
 <iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd96846e509ad7070adb6?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
 <p>The differences between the sketch and this first version is the addition of the mount for the microcontroller and that the feet has not been modeled yet. However, after modelling it I realised that I did not have any place to mount the neopixel strips I planned to use. </p>
 <p>Version 2</p>
-<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd968be5a32477691b666?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id = "center"></iframe>
+<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd9683b51e7e5d6437d89?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id = "center"></iframe>
 <p>Changes were made to the corner pieces such that now there is a "floating" panel in the middle where the neopixels can stick onto. The keypad will still rest on the top of it. Originally, the turqoise and pink parts (pictured below) were a single body, but I separated them so that there will be no supports during 3D printing. <br><br> Another change made was adding more space for the keypad. The keypad is very thin and floppy on its own so I plan to stick it onto a laser cut panel in order to give it more rigitidy and strength. The thickness of the acrylic plate was accounted for in the space between the top plate and the place where it will rest.</p>
 <figure>
   <img src="./images/final/newcorners.png" style="width:100%">
   <figcaption>New corner pieces</figcaption>
 </figure>
-<h3>First prints and cuts</h3>
-<p>With the 3D modelling done and since the machines were free, I printed and laser cut most of the parts.</p>
-<h3>Machine and settings used for 3D printing.</h3>
+<h2>3D printing and laser cutting</h2>
+<h3>Machine and settings used for 3D printing</h3>
+<figure>
 <table style="width:100%">
   <table id="t01">
     <colgroup>
       <col span="1" style="width: 15%;">
-      <col span="1" style="width: 55%;">
-      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 85%;">
    </colgroup>
   <tbody>
     <tr>
       <td>Machine</td>
       <td>Ultimaker 2+</td>
-      <td rowspan="6" id="tpicborder"> <img src="./images/lasercut & 3d printing/3dprinter.jpg" id="lasercutter"/></td>
     </tr>
     <tr>
       <td>Material</td>
@@ -78,6 +76,11 @@
       <td>Infill Density and Pattern</td>
       <td>20% Grid</td>
     </tr>
+  </tr>
+  <tr>
+    <td>Printing speed</td>
+    <td>80mm/s</td>
+  </tr>
     <tr>
       <td>Supports</td>
       <td>None</td>
@@ -88,7 +91,7 @@
     </tr>
   </tbody>
   </table>
-<p>The print took roughly and hour and a half.</p>
+</figure>
 <figure>
   <div class="row">
     <div class="column">
@@ -105,19 +108,19 @@
     </div>
   </figure>
 
-  <h2>Machine and settings used for Lasercutting.</h2>
+  <h3>Machine and settings used for Lasercutting.</h3>
+  <figure>
 <table style="width:100%">
   <table id="t01">
     <colgroup>
       <col span="1" style="width: 15%;">
-      <col span="1" style="width: 55%;">
-      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 85%;">
    </colgroup>
   <tbody>
     <tr>
       <td>Machine</td>
       <td>Epilog Fusion Pro</td>
-      <td rowspan="6" id="tpicborder"> <img src="./images/lasercut & 3d printing/lasercutter.jpg" id="lasercutter"/></td>
+
     </tr>
     <tr>
       <td>Material Thickness and Type</td>
@@ -131,7 +134,7 @@
       <td>Power - 90</td>
     </tr>
     <tr>
-      <td>Frequency - -</td>
+      <td>Frequency - 90</td>
     </tr>
     <tr>
       <td>Engrave Settings</td>
@@ -139,6 +142,7 @@
     </tr>
   </tbody>
   </table>
+</figure>
   <figure>
     <div class="row">
       <div class="column">
@@ -150,10 +154,10 @@
         <figcaption>Pieces cut out</figcaption>
       </div>
     </figure>
-
-<p>After I got all the parts, I faced 3 issues. <br>Issue #1: I did not properly measure how wide the neopixel strips were before printing. The current width on the 3D model was .5mm, but the neopixels are 9~10mm wide. With the current model, only half of the width would be secured. <br><br>Issue #2: Using the brim was a mistake. Because the parts being printed were totally flat with relatively large surface area, I could have gotten away with printing without the brim. However, I still did, which resulted in lots of time being spent cleaning up the print, as the brim got into all the slots for the acrylic plate.<br><br>Issue #3: I did not account for tolerances and shrinkage during the print. As a result, the acrylic plates could not fit into their slots and lots of post processing work had to be done to make sure they fit. Moreover, the holes I modelled to be M3 ended up shrinking as well, requiring me to drill it out again using a 3mm drill. </p> 
+<h2>Issues</h2>
+<p>After I got all the parts, I faced 3 issues. <br>Issue 1: I did not properly measure how wide the neopixel strips were before printing. The current width on the 3D model was 5mm, but the neopixels are 9~10mm wide. With the current model, only half of the width would be secured. <br><br>Issue 2: Using the brim was a mistake. Because the parts being printed were totally flat with relatively large surface area, I could have gotten away with printing without the brim. However, I still did, which resulted in lots of time being spent cleaning up the print, as the brim got into all the slots for the acrylic plate.<br><br>Issue 3: I did not account for tolerances and shrinkage during the print. As a result, the acrylic plates could not fit into their slots and lots of post processing work had to be done to make sure they fit. Moreover, the holes I modelled to be M3 ended up shrinking as well, requiring me to drill it out again using a 3mm drill. </p> 
 <p>Even with all these issues, I still sanded all the parts to make it fit in order to see how everything went together.</p>
-
+<h2>Week 1 assembly</h2>
 <figure>
   <div class="row">
     <div class="column">
@@ -175,6 +179,123 @@
 
 <p>Next week, I plan to reprint the corner piece with the correct width for the neopixel, print out the mount for the microcontroller, as well as solder the keypad and neopixels to the microcontroller.</p>
 
+<h2>Week 2</h2>
+<p>From the first week, I just kept the laser cut parts as there were no changes done to the design. During this week, I plan to print out the remaining parts such as the arduino mount and the feet, remodel and reprint the corner pieces as well as finish soldering the electronics. </p>
+<h2>3D Modeling</h2>
+<p>As stated in week 1, the original mounting place for the neopixel LED strips was too narrow. I extended the extrude downwards by an extra 5mm, and modelled the feet for the macropad. With this, the design is finalised. </p>
+<iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd968be5a32477691b666?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/newcorners2.png" style="width:100%">
+      <figcaption>Extended center for mounting</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/feet.png" style="width:100%">
+      <figcaption>Feet (Underside)</figcaption>
+    </div>
+  </figure>
+  <h2>3D printing</h2>
+  <h3>Machine and settings used for 3D printing</h3>
+<figure>
+<table style="width:100%">
+  <table id="t01">
+    <colgroup>
+      <col span="1" style="width: 15%;">
+      <col span="1" style="width: 85%;">
+   </colgroup>
+  <tbody>
+    <tr>
+      <td>Machine</td>
+      <td>Ultimaker 2+</td>
+    </tr>
+    <tr>
+      <td>Material</td>
+      <td>Black PLA</td>
+    </tr>
+    <tr>
+      <td>Layer Height</td>
+      <td>0.2mm</td>
+    </tr>
+    <tr>
+      <td>Infill Density and Pattern</td>
+      <td>20% Grid</td>
+    </tr>
+  </tr>
+  <tr>
+    <td>Print Speed</td>
+    <td>80mm/s</td>
+  </tr>
+    <tr>
+      <td>Supports</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Build Plate Adhesion</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  </table>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/corners.jpg" style="width:100%">
+      <figcaption>New corner pieces</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/mount.jpg" style="width:100%">
+      <figcaption>Arduino Mount</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/feet.jpg" style="width:100%">
+      <figcaption>Feet</figcaption>
+    </div>
+  </figure>
+<p>Even though the parts that the acrylic plate meshes into was not changed, somehow this print had better tolerences than the orange print. There was no sanding required to fit the acrylic side plates in. The 3mm hole still shrunk slightly tho, and had to be drilled out. I printed the mount without supports as it was not really an area of importance and it came out fine, though just like the other holes, I had to drill the mounting holes out. <br><br>Now that the case has been made, time to move on to electronics.</p>
+
+<h2>Electronics</h2>
+<p>This whole project relies on a arduino pro micro board I had lying around. The reason why I have to use an arduino pro micro and not an arduino nano will be explained in the code portion. For this week, I just want to finish the soldering and make sure the components work before I start coding.</p>
+<h3>Wiring diagram</h3>
+<figure>
+  <img src="./images/final/wiring.png" style="width:100%">
+</figure>
+<p>This was the first time I was soldering so at first, the solder job was not that good, but I gained a lot of experience during the whole process.</p>
+
+<p>First was soldering the connections to the keypad. To make connecting to the keypad easier, wires were first soldered to 8 connected pin headers. Afterwards the pin headers can just plug into the keypad. These connections were the first ever soldering job I have done, and its clearly visible how shoddy it is. Nevertheless, instead of resoldering it, I just trusted that it will work and shrink-wrapped the connections, just in case there was a short between the wires. Afterwards, I soldered the other end of the wires to the arduino.</p>
+<figure>
+  <img src="./images/final/pinheader.jpg" style="width: 100%">
+  <figcaption>First soldering job</figcaption>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/shrinkwrap.jpg" style="width:100%">
+      <figcaption>Shrink-wrapped connections</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/arduinosolder.jpg" style="width:100%">
+      <figcaption>Soldered to arduino</figcaption>
+    </div>
+  </figure>
+<p>Afterwards was soldering to the neopixel strip. This part should have been easy because the neopixel only needs 3 pins to connect (Data in, 5V and GND). However, because I want to space out the individual LEDs apart, 6 solder joints ended up becoming 24. There are a total of 6 LEDs, split into 2-1-1-2, wrapping around the center part of the corner 3D print, pictured below.</p>
+<figure><img src="./images/final/neopixel.png" style="width: 100%;"></figure>
+<p>Due to the large amount of connections, I had a lot of practice soldering. Because I did not get the lengths right, I had to desolder and resolder about 12 more times, which gave me even more practice. By the end, I was getting the hang of soldering and some of the connections don't look too bad.</p>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/neopixel2.jpg" style="width:100%">
+      <figcaption>Close up of some connections</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/neopixel3.jpg" style="width:100%">
+      <figcaption>All connections</figcaption>
+    </div>
+</figure>
+<p>After soldering to the board, the electronics has been completed.</p>
+<figure>
+  <img src="./images/final/finalelectronics.jpg" style="width: 100%;">
+</figure>
 
 <div class="footer">
   <p id="footer">Copyright &copy; 2021 lynn-mma</p>
