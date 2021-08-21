@@ -31,15 +31,48 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <div class=content>
 <h1>Final Project</h1>
-<h2>Week 1</h2>
-<h3>Ideation</h3>
+<p>Here is where I will be documenting the process of making my final project. As this is my first full integration project, I wanted to make something simple. What I decided to make was an RGB Macropad, a convenient place with all the keybinds and media keys I need. I will be incorporating laser cutting, 3D printing and microcontrollers into a fully integrated project. The raw files can be aquired below and the rest of this page is my week to week documentation of the process.</p>
+
+<h2>Table of contents</h2>
+<h3><a href="#rawfiles" id="link">Raw Files</a></h3>
+<h3><a href="#bom" id="link">Bill of Materials</a></h3>
+<h3><a href="#week1" id="link">Week 1</a></h3>
+<ul>
+    <li><a href="#idea" id="link">Ideation</a></li>
+    <li><a href="#sketch" id="link">Sketch</a></li>
+    <li><a href="#3dmodelling1" id="link">3D Modelling</a></li>
+    <li><a href="#settings" id="link">3D Printing and Lasercutting</a></li>
+    <li><a href="#issues" id="link">Issues</a></li>
+    <li><a href="#assembly1" id="link">First Assembly</a></li>
+</ul>
+<h3><a href="#week2" id="link">Week 2</a></h3>
+<ul>
+  <li><a href="#3dmodelling2" id="link">3D Modelling</a></li>
+  <li><a href="#settings2" id="link">3D Printing</a></li>
+  <li><a href="#electronics" id="link">Electronics</a></li>
+  <li><a href="#test" id="link">Electronics Test</a></li>
+</ul>
+<h3><a href="#week3" id="link">Week 3</a></h3>
+<ul>
+  <li><a href="#code" id="link">Code</a></li>
+  <li><a href="#modcode" id="link">Modifying the code</a></li>
+  <li><a href="#codetest" id="link">Testing the Code</a></li>
+  <li><a href="#finalassembly" id="link">Final Assembly</a></li>
+</ul>
+<h3><a href="#resources" id="link">Resources Used</a></h3>
+<h2 id="rawfiles">Raw Files</h2>
+<h2 id="bom">Bill of Materials</h2>
+
+
+<h2 id="week1">Week 1</h2>
+<h2 id="idea">Ideation</h2>
 <p>Originally, I wanted to make a mechanical tenkey pad for macros and shortcuts from scratch, soldering my own mechanical switches together in a switch matrix. However, because of the lack of time, I decided to use a 4x4 Matrix Membrane Keypad, which achieves the same purpose. With the main component decided, I went ahead and sketched out a basic case design.</p>
-<h3>Sketch</h3>
+<h2 id="sketch">Sketch</h2>
 <figure>
 <img src="./images/final/sketch.jpg" style="width:100%">
 </figure>
 <p>The case consists of 4 acrylic walls, connected at the corners with 3d printed pieces, and sandwiched between 2 acrylic plates. The keypad rests on platforms on the corner pieces and is held down by the top plate. I plan to use M3x25 screws to connect everything together. With this sketch, I started to 3D model the case</p>
-<h3>3D modelling</h3>
+<h2 id="3dmodelling1">3D modelling</h2>
 <p>Version 1</p>
 <iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd96846e509ad7070adb6?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
 <p>The differences between the sketch and this first version is the addition of the mount for the microcontroller and that the feet has not been modeled yet. However, after modelling it I realised that I did not have any place to mount the neopixel strips I planned to use. </p>
@@ -50,7 +83,7 @@
   <img src="./images/final/newcorners.png" style="width:100%">
   <figcaption>New corner pieces</figcaption>
 </figure>
-<h2>3D printing and laser cutting</h2>
+<h2 id="settings">3D printing and laser cutting</h2>
 <h3>Machine and settings used for 3D printing</h3>
 <figure>
 <table style="width:100%">
@@ -154,10 +187,10 @@
         <figcaption>Pieces cut out</figcaption>
       </div>
     </figure>
-<h2>Issues</h2>
+<h2 id="issues">Issues</h2>
 <p>After I got all the parts, I faced 3 issues. <br>Issue 1: I did not properly measure how wide the neopixel strips were before printing. The current width on the 3D model was 5mm, but the neopixels are 9~10mm wide. With the current model, only half of the width would be secured. <br><br>Issue 2: Using the brim was a mistake. Because the parts being printed were totally flat with relatively large surface area, I could have gotten away with printing without the brim. However, I still did, which resulted in lots of time being spent cleaning up the print, as the brim got into all the slots for the acrylic plate.<br><br>Issue 3: I did not account for tolerances and shrinkage during the print. As a result, the acrylic plates could not fit into their slots and lots of post processing work had to be done to make sure they fit. Moreover, the holes I modelled to be M3 ended up shrinking as well, requiring me to drill it out again using a 3mm drill. </p> 
 <p>Even with all these issues, I still sanded all the parts to make it fit in order to see how everything went together.</p>
-<h2>Week 1 assembly</h2>
+<h2 id="assembly1">Week 1 assembly</h2>
 <figure>
   <div class="row">
     <div class="column">
@@ -179,9 +212,9 @@
 
 <p>Next week, I plan to reprint the corner piece with the correct width for the neopixel, print out the mount for the microcontroller, as well as solder the keypad and neopixels to the microcontroller.</p>
 
-<h2>Week 2</h2>
+<h2 id="week2">Week 2</h2>
 <p>From the first week, I just kept the laser cut parts as there were no changes done to the design. During this week, I plan to print out the remaining parts such as the arduino mount and the feet, remodel and reprint the corner pieces as well as finish soldering the electronics. </p>
-<h2>3D Modeling</h2>
+<h2 id="3dmodelling2">3D Modeling</h2>
 <p>As stated in week 1, the original mounting place for the neopixel LED strips was too narrow. I extended the extrude downwards by an extra 5mm, and modelled the feet for the macropad. With this, the design is finalised. </p>
 <iframe src="https://ichat1889.autodesk360.com/shares/public/SH56a43QTfd62c1cd968be5a32477691b666?mode=embed" width="1024" height="768" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" id="center"></iframe>
 <figure>
@@ -195,7 +228,7 @@
       <figcaption>Feet (Underside)</figcaption>
     </div>
   </figure>
-  <h2>3D printing</h2>
+  <h2 id= "settings2">3D printing</h2>
   <h3>Machine and settings used for 3D printing</h3>
 <figure>
 <table style="width:100%">
@@ -254,8 +287,8 @@
   </figure>
 <p>Even though the parts that the acrylic plate meshes into was not changed, somehow this print had better tolerences than the orange print. There was no sanding required to fit the acrylic side plates in. The 3mm hole still shrunk slightly and had to be drilled out. I printed the mount without supports as it was not really an area of importance and it came out fine, though just like the other holes, I had to drill the mounting holes out. <br><br>Now that the case has been made, time to move on to electronics.</p>
 
-<h2>Electronics</h2>
-<p>This whole project relies on an arduino pro micro board I had lying around. The reason why I had to use an arduino pro micro and not an arduino nano will be explained in the code portion next week. For this week, I just want to finish the soldering and make sure the components work before I start coding.</p>
+<h2 id="electronics">Electronics</h2>
+<p>This whole project relies on an arduino pro micro board I had lying around. For this week, I just want to finish the soldering and make sure the components work before I start coding.</p>
 <h3>Wiring diagram</h3>
 <figure>
   <img src="./images/final/wiring.png" style="width:100%">
@@ -289,24 +322,61 @@
     </div>
     <div class="column">
       <img src="./images/final/neopixel3.jpg" style="width:100%">
-      <figcaption>All connections</figcaption>
+      <figcaption>Connection to the arduino</figcaption>
     </div>
 </figure>
 <p>After soldering to the board, the electronics has been completed.</p>
 <figure>
   <img src="./images/final/finalelectronics.jpg" style="width: 100%;">
 </figure>
-<h2>Week 3</h2>
-<p> Once I got the solder done, I tested the connections using the examples in arduino to see if they still work. I used the built in strandtest from the Adafruit library to test the neopixel strips and used the code for a 4x4 keypad from <a href="https://www.circuitbasics.com/how-to-set-up-a-keypad-on-an-arduino/" id="link" target="_blank">[here]</a>.</p>
+<h2 id="test">Electronics Test</h2>
+<p> Once I got the solder done, I tested the connections using the examples in arduino to see if they still work. I used the built in strandtest from the Adafruit library to test the neopixel strips and used the code for a 4x4 keypad from <a href="https://www.circuitbasics.com/how-to-set-up-a-keypad-on-an-arduino/" id="link" target="_blank">[here]</a>. From the tests, the all the solder joints work with no issues, meaning I can continue with the code in week 3.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X_zkh91Jlpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j_wf-ijPPuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p>Now that I know that the electronics work, time for the code.</p>
+<h2 id="week3">Week 3</h2>
+<p>Now that I have finished the case and the electronics, this week I plan to finish the code and final integration.</p>
+<h2 id="code">The Code</h2>
+<p>The full ino file can be found at the top of this page. In this section I will only be explaining the main parts of the code and how I got the code. For this project, 3 arduino libraries were needed. These libraries are arduino's built in Keypad.h, <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use" id="link">Adafruit_Neopixel.h</a> by Adafruit and <a href="https://www.arduino.cc/reference/en/libraries/hid-project/" id="link">HID-Project.h</a> by Nicohood.</p>
+<figure>
+  <img src="./images/final/libraries.png" >
+</figure>
+<p>First, I used the keypad code from the test example and modified it so that the keypad pattern better reflected what the buttons are supposed to be. When I soldered it, the connections were fine but I messed up the rows and columns of the keypad. Instead of resoldering I decided to fix it in code here.</p>
+<figure>
+  <img src="./images/final/keypad.png" >
+</figure>
+<p>In essence, the main bulk of the code is a large switch case, with each case corresponding to a button on the keypad and doing something different. For example, below is a part of the 16 cases long switch case. When button '3' is pressed on the keypad, the program recognises it as case 3 and execute the commands for case 3, which is to tell the computer to go to the next media. If button '4' is pressed instead, it will tell the computer to press left alt then tab, switching between open applications. </p>
+<figure>
+  <img src="./images/final/switchexample.png" >
+</figure>
+<p>The binds can be changed anytime by changing the code. In general, numbers and letters are Keyboard.press('_') where _ is the letter or number, modifier keys like left alt are Keyboard.press(KEY_LEFT_ALT), and media keys like pause are Consumer.write(MEDIA_PLAY_PAUSE). The switch case just has to be changed to whatever bind or macro you want to set. </p>
+<p>Majority of the cases follow something similar except switch case 'A'. I wanted to make this button cycle through different RGB LED modes, so the switch case is different. I got the code for the RGB lighting by combining the pattern updating, rainbow and rainbowCycle code from a comment by "Grumpy Mike" on an arduino forum <a href="https://forum.arduino.cc/t/button-cycled-neopixel-on-digispark-attiny85/571835/3" id="link">[here]</a> and the code for solid colors from an arduino project by Arnov Sharma <a href="https://create.arduino.cc/projecthub/Arnov_Sharma_makes/neopixel-x-arduino-x-button-c26e9a" id="link">[here]</a>. <br><br>How the color switching works is that first the arduino detects if 'A' has been pressed. Once it has, it will add 1 to the pattern number.</p>
+<figure><img src="./images/final/rgbswitch.png" ></figure>
+<p>At the same time, a function to keep updating the pattern is repeated indefinitely. Although this does not really affect the solid color options, for the last 2 options, rainbow and rainbowCycle, it is very important for the pattern to repeatedly update.</p>
+<figure><img src="./images/final/patternfunction.png" ></figure>
+<p>The function is its own switch case, depending on the pattern number dictated by the 'A' button. The switch cases range from off to solid colors, </p>
+<figure><img src="./images/final/rgbswitchexample1.png"></figure>
+<p>to the rainbow and rainbowCycle cases. Currently there is an off state, 7 solid color states and 2 dynamic color states.</p>
+<figure><img src="./images/final/rgbswitchexample2.png"></figure>
 
+<h2 id="modcode">Modifying the code.</h2>
+<p>The binds can be changed anytime by changing the code. In general, numbers and letters are Keyboard.press('_') where _ is the letter or number, modifier keys like left alt are Keyboard.press(KEY_LEFT_ALT), and media keys like pause are Consumer.write(MEDIA_PLAY_PAUSE). The switch case just has to be changed to whatever bind or macro you want to set. </p>
+
+<p> To add more solid color modes to the RGB, first the intervals in line 9 need to be updated. The position of the number corresponds to the switch case the interval is for. Currently I have the interval for solid colors as '20' and the intervals for rainbow and rainbowCycle as '50'. If more colors and modes are added, this line will need to be updated to reflect the change. </p>
+<figure><img src="./images/final/intervals.png" alt=""></figure>
+<p>Then the number of cases in line 11 need to be changed</p>
+<figure><img src="./images/final/numberofcases.png" alt=""></figure>
+<p>Finally, just add another case to the switch case. The color is determined by the 3 numbers in the strip.Colour brackets. Each number corresponds to a value of RED, GREEN and BLUE respectively, ranging from 0 to 255.</p>
+<figure><img src="./images/final/modifyingrgb.png" alt=""></figure>
+<h2 id="codetest">Testing the Code</h2>
+<p>Below is a video test of some of the functions of the keypad. Although not all the macros are shown, the other parts of the code still work as intended. </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nnd2emPS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="finalassembly">Final Assembly</h2>
+<h2 id="resources">Resources used</h2>
 
 <div class="footer">
-  <p id="footer">Copyright &copy; 2021 lynn-mma</p>
+<p id="footer">Copyright &copy; 2021 lynn-mma</p>
 </div>
 <script type="text/javascript" src="scripts.js"></script>
   </body>
