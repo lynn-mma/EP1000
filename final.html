@@ -34,8 +34,9 @@
 <p>Here is where I will be documenting the process of making my final project. As this is my first full integration project, I wanted to make something simple. What I decided to make was an RGB Macropad, a convenient place with all the keybinds and media keys I need. I will be incorporating laser cutting, 3D printing and microcontrollers into a fully integrated project. The raw files can be aquired below and the rest of this page is my week to week documentation of the process.</p>
 
 <h2>Table of contents</h2>
+<h3><a href="#bom" id="link">List of Materials</a></h3>
+
 <h3><a href="#rawfiles" id="link">Raw Files</a></h3>
-<h3><a href="#bom" id="link">Bill of Materials</a></h3>
 <h3><a href="#week1" id="link">Week 1</a></h3>
 <ul>
     <li><a href="#idea" id="link">Ideation</a></li>
@@ -60,8 +61,91 @@
   <li><a href="#finalassembly" id="link">Final Assembly</a></li>
 </ul>
 <h3><a href="#resources" id="link">Resources Used</a></h3>
+<h2 id="bom">List of Materials</h2>
+<figure>
+  <table style="width:100%">
+    <table id="t01">
+      <colgroup>
+        <col span="1" style="width: 50%;">
+        <col span="1" style="width: 15%;">
+     </colgroup>
+    <tbody>
+      <tr>
+        <th>Parts to purchase</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Arduino Pro Micro</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>4x4 Membrane Keypad</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>WS2812 Neopixel</td>
+        <td>6</td>
+      </tr>
+    </tr>
+    <tr>
+      <td>Frosted Acrylic Sheet</td>
+      <td>1</td>
+    </tr>
+      <tr>
+        <th>Parts to 3D print</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Center</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Mount</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Corner Spacer</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Feet</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th>Parts to laser cut</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Top Plate</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Keypad Support</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Front Plate</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Back Plate</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Bottom Plate</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Side Plate</td>
+        <td>2</td>
+      </tr>
+
+    </tbody>
+    </table>
+  </figure>
 <h2 id="rawfiles">Raw Files</h2>
-<h2 id="bom">Bill of Materials</h2>
+<a href="https://drive.google.com/drive/folders/1CVtpohhUQ_3qIBbKig_CtywXGrbk4zNn?usp=sharing" id="link" target="_blank">[Google Drive folder with the raw files.]</a>
+
 
 
 <h2 id="week1">Week 1</h2>
@@ -373,7 +457,127 @@
 <p>Below is a video test of some of the functions of the keypad. Although not all the macros are shown, the other parts of the code still work as intended. </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nnd2emPS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h2 id="finalassembly">Final Assembly</h2>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly1.jpg" style="width:100%">
+      <figcaption>Take 2 M3x5 screws, 2 M3 nuts, Arduino mount, Backplate </figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly2.jpg" style="width:100%">
+      <figcaption>Attach them together like so.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly3.jpg" style="width:100%">
+      <figcaption>Take the electronics</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly4.jpg" style="width:100%">
+      <figcaption>Slot the connector of the board into the hole in the mount and clip the board in from the back.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly5.jpg" style="width:100%">
+      <figcaption>Take the center piece.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly6.jpg" style="width:100%">
+      <figcaption>Attach the arduino/backplate mount. Note: it is easier if the center piece comes in from above.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly7.jpg" style="width:100%">
+      <figcaption>Stick double sided tape to the back of the RGB LEDs.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly8.jpg" style="width:100%">
+      <figcaption>Attach them like so. Ideally, the double sided tape is the thin kind and not the thick foam tape. This was just what I had handy.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly9.jpg" style="width:100%">
+      <figcaption>Take 4 M3x25 screws, 4 feet and the bottom plate.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly10.jpg" style="width:100%">
+      <figcaption>Attach them like so. Note: the screw head should be inside the recess in the feet and be flush with the bottom.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly11.jpg" style="width:100%">
+      <figcaption>Attach the keypad support plate to the keypad using the double sided tape on the keypad.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly12.jpg" style="width:100%">
+      <figcaption>Place the keypad like so, with the wire ribbon resting on the bottom plate.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly13.jpg" style="width:100%">
+      <figcaption>Bring in the center with the electronics. The wire ribbon should sit above the arduino as shown above.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly14.jpg" style="width:100%">
+      <figcaption>Connect the wires together.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly15.jpg" style="width:100%">
+      <figcaption>Lift up the keypad to put the front plate into its slot.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly16.jpg" style="width:100%">
+      <figcaption>Attach the side plates to their slots.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly17.jpg" style="width:100%">
+      <figcaption>Take 4 corner spacers</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly18.jpg" style="width:100%">
+      <figcaption>Place them at the corners. Now the keypad should be able to be seated properly in the assembly.</figcaption>
+    </div>
+</figure>
+<figure>
+  <div class="row">
+    <div class="column">
+      <img src="./images/final/assembly19.jpg" style="width:100%">
+      <figcaption>Take 4 M3 nuts and the top plate.</figcaption>
+    </div>
+    <div class="column">
+      <img src="./images/final/assembly20.jpg" style="width:100%">
+      <figcaption>Attach them to the top of the assembly. With this, the keypad is done.</figcaption>
+    </div>
+</figure>
+
+
+
 <h2 id="resources">Resources used</h2>
+<ul>
+<li><a href="https://create.arduino.cc/projecthub/brian-lough/the-simplest-diy-macro-keypad-d2e428" target="_blank" id="link">https://create.arduino.cc/projecthub/brian-lough/the-simplest-diy-macro-keypad-d2e428</a></li>
+<li><a href="https://forum.arduino.cc/t/button-cycled-neopixel-on-digispark-attiny85/571835/4" target="_blank" id="link">https://forum.arduino.cc/t/button-cycled-neopixel-on-digispark-attiny85/571835/4</a></li>
+<li><a href="https://create.arduino.cc/projecthub/Arnov_Sharma_makes/neopixel-x-arduino-x-button-c26e9a" target="_blank" id="link">https://create.arduino.cc/projecthub/Arnov_Sharma_makes/neopixel-x-arduino-x-button-c26e9a</a></li>
+</ul>
+
+
 
 <div class="footer">
 <p id="footer">Copyright &copy; 2021 lynn-mma</p>
